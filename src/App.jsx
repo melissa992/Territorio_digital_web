@@ -514,7 +514,7 @@ function App() {
           <div className="flex min-w-0 shrink items-center gap-3">
             <TerritorioLogo />
             <div className="flex min-w-0 items-center gap-2 border-l border-amber-200/30 pl-3">
-              <span className="whitespace-nowrap text-lg font-black tracking-tight text-white sm:text-xl">
+              <span className="header-brand whitespace-nowrap font-black text-white">
                 Territorio Digital
               </span>
             </div>

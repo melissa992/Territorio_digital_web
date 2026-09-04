@@ -44,7 +44,7 @@ function AdminModule({ session, onSessionChange }) {
         <button
           type="button"
           onClick={handleLogout}
-          className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-[#123b63]/80 px-4 py-2.5 font-semibold text-white shadow-[0_6px_16px_rgba(0,0,0,0.16)] transition hover:-translate-y-0.5 hover:bg-[#0d2f50]"
+          className="login-button inline-flex items-center gap-2 rounded-full border border-white/70 bg-[#123b63]/90 px-5 py-3 text-base font-bold text-white shadow-[0_8px_20px_rgba(0,0,0,0.2)] transition hover:-translate-y-0.5 hover:bg-[#0d2f50]"
         >
           <LogOut className="h-4 w-4" />
           Cerrar sesión
@@ -56,7 +56,7 @@ function AdminModule({ session, onSessionChange }) {
             setError("");
             setIsOpen(true);
           }}
-          className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-[#123b63]/80 px-4 py-2.5 font-semibold text-white shadow-[0_6px_16px_rgba(0,0,0,0.16)] transition hover:-translate-y-0.5 hover:bg-[#0d2f50]"
+          className="login-button inline-flex items-center gap-2 rounded-full border border-white/80 bg-[#123b63]/90 px-5 py-3 text-base font-bold text-white shadow-[0_8px_20px_rgba(0,0,0,0.2)] transition hover:-translate-y-0.5 hover:bg-[#0d2f50]"
         >
           <LockKeyhole className="h-4 w-4" />
           Login admin
@@ -132,7 +132,7 @@ function AdminModule({ session, onSessionChange }) {
                 </p>
               )}
 
-              <div className="mt-7 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
+              <div className="mt-7 flex flex-col-reverse gap-3 sm:flex-row sm:justify-center">
               <button
                 type="button"
                 onClick={() => setIsOpen(false)}
@@ -143,7 +143,7 @@ function AdminModule({ session, onSessionChange }) {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#1d5fb8] px-5 py-3 text-base font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:-translate-y-0.5 hover:bg-[#164c96] disabled:cursor-wait disabled:opacity-60"
+                className="login-submit inline-flex min-w-[190px] items-center justify-center gap-2 rounded-2xl bg-[#1d5fb8] px-7 py-4 text-lg font-bold text-white shadow-lg shadow-blue-500/25 transition hover:-translate-y-1 hover:bg-[#164c96] disabled:cursor-wait disabled:opacity-60"
               >
                 <LogIn className="h-4 w-4" />
                 {isLoading ? "Ingresando..." : "Entrar"}

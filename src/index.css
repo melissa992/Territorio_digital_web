@@ -86,6 +86,26 @@ li {
   animation: spectrum-flow 9s linear infinite;
 }
 
+.header-brand {
+  font-size: clamp(1.2rem, 1.5vw, 1.65rem);
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-shadow: 0 2px 10px rgba(8, 35, 62, 0.35);
+}
+
+.login-button {
+  animation: login-glow 3.5s ease-in-out infinite;
+}
+
+@keyframes login-glow {
+  0%, 100% {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 8px 24px rgba(14, 165, 233, 0.42);
+  }
+}
+
 .animate-drift {
   animation: drift 12s ease-in-out infinite;
 }
