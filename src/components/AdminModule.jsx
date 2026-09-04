@@ -45,7 +45,7 @@ function AdminModule({ session, onSessionChange }) {
         <button
           type="button"
           onClick={handleLogout}
-          className="login-button inline-flex items-center gap-2 rounded-full border border-white/70 bg-[#123b63]/90 px-5 py-3 text-base font-bold text-white shadow-[0_8px_20px_rgba(0,0,0,0.2)] transition hover:-translate-y-0.5 hover:bg-[#0d2f50]"
+          className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-[#123b63]/90 px-5 py-3 text-base font-bold text-white shadow-[0_8px_20px_rgba(0,0,0,0.2)] transition hover:-translate-y-0.5 hover:bg-[#0d2f50]"
         >
           <LogOut className="h-4 w-4" />
           Cerrar sesión
@@ -57,7 +57,7 @@ function AdminModule({ session, onSessionChange }) {
             setError("");
             setIsOpen(true);
           }}
-          className="login-button inline-flex items-center gap-2 rounded-full border border-white/80 bg-[#123b63]/90 px-5 py-3 text-base font-bold text-white shadow-[0_8px_20px_rgba(0,0,0,0.2)] transition hover:-translate-y-0.5 hover:bg-[#0d2f50]"
+          className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-[#123b63]/90 px-5 py-3 text-base font-bold text-white shadow-[0_8px_20px_rgba(0,0,0,0.2)] transition hover:-translate-y-0.5 hover:bg-[#0d2f50]"
         >
           <LockKeyhole className="h-4 w-4" />
           Login admin
@@ -68,9 +68,9 @@ function AdminModule({ session, onSessionChange }) {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#09243d]/70 px-4 py-6 backdrop-blur-md">
           <form
             onSubmit={handleSubmit}
-            className="w-full max-w-md overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-[0_28px_90px_rgba(3,25,44,0.35)]"
+            className="w-full max-w-lg overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-[0_28px_90px_rgba(3,25,44,0.35)]"
           >
-            <div className="bg-[linear-gradient(120deg,#0f4c5c_0%,#1d5fb8_58%,#159a9c_100%)] px-6 py-7 text-white sm:px-8">
+            <div className="bg-[linear-gradient(120deg,#0f4c5c_0%,#1d5fb8_58%,#159a9c_100%)] px-6 py-9 text-white sm:px-10">
               <div className="flex items-start justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/15 ring-1 ring-white/30">
@@ -80,7 +80,7 @@ function AdminModule({ session, onSessionChange }) {
                     <p className="text-sm font-bold uppercase tracking-[0.18em] text-cyan-100">
                       Área protegida
                     </p>
-                    <h2 className="mt-1 text-2xl font-black">Login admin</h2>
+                    <h2 className="mt-1 text-3xl font-black">Login admin</h2>
                   </div>
                 </div>
                 <button
@@ -94,8 +94,8 @@ function AdminModule({ session, onSessionChange }) {
               </div>
             </div>
 
-            <div className="p-6 sm:p-8">
-              <p className="text-base leading-7 text-slate-600">
+            <div className="p-7 sm:p-10">
+              <p className="text-lg leading-8 text-slate-600">
                 Gestiona los registros y fotografías de la memoria comunitaria.
               </p>
 
@@ -144,7 +144,7 @@ function AdminModule({ session, onSessionChange }) {
                 </p>
               )}
 
-              <div className="mt-7 flex flex-col-reverse items-center gap-3">
+              <div className="mt-8 flex flex-col items-center gap-3">
                 <button
                   type="button"
                   onClick={() => setIsOpen(false)}
@@ -155,7 +155,7 @@ function AdminModule({ session, onSessionChange }) {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="login-submit inline-flex min-h-14 w-full max-w-xs items-center justify-center gap-2 rounded-2xl bg-[#1d5fb8] px-7 py-4 text-xl font-bold text-white shadow-lg shadow-blue-500/25 transition hover:-translate-y-1 hover:bg-[#164c96] disabled:cursor-wait disabled:opacity-60"
+                  className="login-submit inline-flex min-h-16 w-full max-w-md items-center justify-center gap-2 rounded-2xl bg-[#1d5fb8] px-7 py-4 text-xl font-bold text-white shadow-lg shadow-blue-500/25 transition hover:-translate-y-1 hover:bg-[#164c96] disabled:cursor-wait disabled:opacity-60"
                 >
                   <LogIn className="h-4 w-4" />
                   {isLoading ? "Ingresando..." : "Iniciar sesión"}
